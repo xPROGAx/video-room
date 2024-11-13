@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Видео-комната</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div id="join-container">
+      <input
+        type="text"
+        id="roomId"
+        placeholder="Введите идентификатор комнаты"
+      />
+      <button id="joinBtn">Подключиться</button>
+    </div>
+    <div id="video-container" style="display: none">
+      <video id="localVideo" autoplay muted></video>
+      <video id="remoteVideo" autoplay></video>
+      <div id="chat-container">
+        <div id="chat-box"></div>
+        <input type="text" id="chatInput" placeholder="Сообщение" />
+        <button id="sendBtn">Отправить</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
